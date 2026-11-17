@@ -131,6 +131,7 @@ a {
 }
 
 .hero {
+  background: var(--green);
   display: grid;
   grid-template-columns: 1fr 0.9fr;
   min-height: 614px;
@@ -144,6 +145,21 @@ a {
   padding-bottom: 14px;
   position: relative;
   z-index: 1;
+}
+
+.hero .eyebrow,
+.hero-description,
+.hero-footnote,
+.hero-index {
+  color: #e1e7dc;
+}
+
+.hero h1 {
+  color: var(--paper);
+}
+
+.hero .serif-accent {
+  color: var(--lime);
 }
 
 .eyebrow {

@@ -2,16 +2,16 @@ import { useState } from "react";
 
 const services = [
   {
-    title: "Strategy & positioning",
-    description: "Find your focus, understand your audience, and make your next move count.",
+    title: "Communications strategy",
+    description: "A clear plan to reach the right people and communicate with purpose.",
   },
   {
-    title: "Brand & storytelling",
-    description: "Build a distinctive voice and turn what makes you different into a story people feel.",
+    title: "Brand & content",
+    description: "Consistent messaging and useful content that make your business recognizable.",
   },
   {
-    title: "Campaigns & connection",
-    description: "Create meaningful moments that bring your community closer to what you do.",
+    title: "Campaigns & public relations",
+    description: "Creative campaigns and media outreach that help your story travel further.",
   },
 ];
 
@@ -67,8 +67,8 @@ function Header() {
         aria-label="Main navigation"
       >
         <a href="#about" onClick={closeMenu}>About</a>
-        <a href="#services" onClick={closeMenu}>What we do</a>
-        <a href="#approach" onClick={closeMenu}>Our approach</a>
+        <a href="#services" onClick={closeMenu}>Services</a>
+        <a href="#approach" onClick={closeMenu}>Why Urban</a>
         <a className="nav-cta" href="#contact" onClick={closeMenu}>
           Let’s talk <span aria-hidden="true">↗</span>
         </a>
@@ -92,11 +92,11 @@ function HeroArtwork() {
         <span>Ideas in good company</span>
         <span>↗</span>
       </div>
-      <div className="art-coordinate">51°30&apos; N &nbsp; 00°07&apos; W</div>
+      <div className="art-coordinate">STRATEGY · CONTENT · CAMPAIGNS</div>
       <div className="art-stamp">
         UC
         <br />
-        <span>EST. 2016</span>
+        <span>CREATIVE STUDIO</span>
       </div>
     </div>
   );
@@ -106,30 +106,30 @@ function Hero() {
   return (
     <section className="hero section-wrap" id="home">
       <div className="hero-copy">
-        <p className="eyebrow"><span className="status-dot" />Independent communications studio</p>
+        <p className="eyebrow"><span className="status-dot" />Urban Communication · Independent studio</p>
         <h1>
-          Good ideas
+          Make your
           <br />
-          deserve to be
+          message
           <br />
-          <span className="serif-accent">seen.</span>
+          <span className="serif-accent">matter.</span>
         </h1>
         <p className="hero-description">
-          We help people, places, and purpose-led brands find their voice — and make it matter.
+          Clear strategy, thoughtful content, and creative campaigns for businesses ready to grow.
         </p>
         <div className="hero-actions">
           <a className="button button-dark" href="#services">
-            Explore what we do <span aria-hidden="true">↘</span>
+            Explore our services <span aria-hidden="true">↘</span>
           </a>
           <a className="text-link" href="#about">
             A little about us <span aria-hidden="true">→</span>
           </a>
         </div>
-        <div className="hero-footnote"><span>01</span>Strategy first. Always.</div>
+        <div className="hero-footnote"><span>01</span>Good communication starts with a clear plan.</div>
       </div>
       <HeroArtwork />
       <div className="hero-index">
-        COMMUNICATION, WITH INTENTION <span>— &nbsp; 2025 / 26</span>
+        COMMUNICATION, WITH INTENTION <span>— &nbsp; STRATEGY / CONTENT / CAMPAIGNS</span>
       </div>
     </section>
   );
@@ -141,22 +141,23 @@ function About() {
       <SectionLabel detail="✳">01 / WHO WE ARE</SectionLabel>
       <div className="intro-content">
         <h2>
-          We make the complex
+          A communications partner
           <br />
-          feel <span className="serif-accent">clear.</span>
+          for <span className="serif-accent">what’s next.</span>
         </h2>
         <div className="intro-aside">
           <p>
-            In a noisy world, clarity is a superpower. We’re an independent creative communications
-            studio bringing sharp thinking and human energy to the stories that deserve attention.
+            Urban Communication helps businesses explain what they do, connect with their audiences,
+            and build a stronger presence. We bring strategy and creative delivery together in one
+            collaborative studio.
           </p>
           <a className="text-link" href="#approach">
-            Meet our approach <span aria-hidden="true">→</span>
+            Why work with us <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>
       <div className="intro-bottom">
-        <span>Curious by nature. Connected by design.</span>
+        <span>Clear thinking. Consistent communication.</span>
         <span className="intro-mark" aria-hidden="true">U<span>/</span>C</span>
       </div>
     </section>
@@ -166,14 +167,14 @@ function About() {
 function Services() {
   return (
     <section className="services section-wrap" id="services">
-      <SectionLabel detail="01 — 03">02 / WHAT WE DO</SectionLabel>
+      <SectionLabel detail="01 — 03">02 / OUR SERVICES</SectionLabel>
       <div className="services-heading">
         <h2>
-          Thoughtful work.
+          Practical support.
           <br />
-          <span className="serif-accent">Real-world impact.</span>
+          <span className="serif-accent">Clear communication.</span>
         </h2>
-        <p>From first thought to full momentum, we bring the right people and ideas together.</p>
+        <p>Flexible communications support, shaped around your business and your goals.</p>
       </div>
       <div className="service-list">
         {services.map((service, index) => (
@@ -210,20 +211,20 @@ function Approach() {
         <span className="approach-orbit-label">LISTEN · THINK · MAKE · SHARE</span>
       </div>
       <div className="approach-copy">
-        <SectionLabel detail="✳">03 / HOW WE WORK</SectionLabel>
-        <p className="eyebrow">A small studio with a wide lens</p>
+        <SectionLabel detail="✳">03 / WHY URBAN</SectionLabel>
+        <p className="eyebrow">Direct, collaborative, and focused</p>
         <h2>
-          Close to the work.
+          Your goals.
           <br />
-          <span className="serif-accent">Open to possibility.</span>
+          <span className="serif-accent">Our full attention.</span>
         </h2>
         <p>
-          We work shoulder-to-shoulder with our clients, bringing thoughtful strategy and creative
-          instinct to every brief. No big-agency layers, no off-the-shelf answers — just good people
-          working on what matters.
+          Work directly with a communications partner who takes time to understand your business.
+          From a single project to ongoing support, we keep the process clear, collaborative, and
+          tailored to what you need.
         </p>
         <a className="button button-light" href="#contact">
-          Get to know us <span aria-hidden="true">↗</span>
+          Talk about your project <span aria-hidden="true">↗</span>
         </a>
       </div>
     </section>
@@ -233,14 +234,14 @@ function Approach() {
 function Contact() {
   return (
     <section className="contact section-wrap" id="contact">
-      <SectionLabel detail="YOUR MOVE →">04 / START A CONVERSATION</SectionLabel>
+      <SectionLabel detail="YOUR MOVE →">04 / CONTACT</SectionLabel>
       <div className="contact-main">
         <div>
-          <p className="eyebrow"><span className="status-dot" />Have a good one in mind?</p>
+          <p className="eyebrow"><span className="status-dot" />Let’s talk about your business</p>
           <h2>
-            Let’s make
+            Need a clearer
             <br />
-            something <span className="serif-accent">matter.</span>
+            way to <span className="serif-accent">connect?</span>
           </h2>
         </div>
         <a className="contact-link" href="mailto:hello@urbancommunication.studio">
@@ -248,7 +249,7 @@ function Contact() {
         </a>
       </div>
       <div className="contact-bottom">
-        <span>Good conversations start somewhere.</span>
+        <span>Tell us what you’re working on.</span>
         <a href="#home">Back to the top ↑</a>
       </div>
     </section>
@@ -259,7 +260,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <Wordmark footer />
-      <span>Independent by nature. Together by design.</span>
+      <span>Independent communications studio</span>
       <span>© {new Date().getFullYear()} Urban Communication</span>
     </footer>
   );
